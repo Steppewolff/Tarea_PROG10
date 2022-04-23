@@ -116,9 +116,11 @@ public class NewContainer extends JFrame implements ActionListener {
                     bingoCasillas[f][c] = new JButton("X");
                     bingoCasillas[f][c].setBackground(Color.BLACK);
                     bingoCasillas[f][c].setForeground(Color.RED);
+                    bingoCasillas[f][c].setFont(new Font("Verdana", Font.PLAIN, 20));                    
                 }else{
                     bingoCasillas[f][c] = new JButton(""+bingoMatriz[f][c]);//String numCadena =  Integer.toString(bingoMatriz[f][c]);
                     bingoCasillas[f][c].addActionListener(this);
+                    bingoCasillas[f][c].setFont(new Font("Verdana", Font.PLAIN, 20));                    
                 }
                 bingoCasillas[f][c].setBounds(0, 0, 100, 100);
 
